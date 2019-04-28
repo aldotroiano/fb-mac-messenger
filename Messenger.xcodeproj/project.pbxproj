@@ -279,7 +279,7 @@
 			};
 			buildConfigurationList = 3A9A9C3A1AD5B407008FABE9 /* Build configuration list for PBXProject "Messenger" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,

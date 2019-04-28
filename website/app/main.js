@@ -41,11 +41,12 @@
     setMasterViewHeader: function(header) {
       if (header !== M._header) {
         M._header = header
-        // if (M._header) {
-        //   var s = M._header.style
-        //   s.setProperty('justify-content', 'flex-end', 'important')
-        //   s.setProperty('-webkit-justify-content', 'flex-end', 'important')
-        // }
+          if (M._header) {
+            var s = M._header.style
+            s.setProperty('justify-content', 'center', 'important')
+            s.setProperty('-webkit-justify-content', 'center', 'important')
+            s.setProperty('padding-left', '25px', 'important')      //Added for redimensioning purposes. If window is redimensioned horizontally, Settings won't go under full-screen system button
+         }
       }
       return M._header
     },
@@ -356,7 +357,7 @@
       M._updateTitleTimer = setTimeout(function(){
         var detailViewTitle = document.querySelector('[role="main"] h2')
         if (detailViewTitle) {
-          window.SetMainWindowTitle(detailViewTitle.innerText.trim())
+          //window.SetMainWindowTitle(detailViewTitle.innerText.trim())
         } else {
           window.SetMainWindowTitle('Messenger')
         }
